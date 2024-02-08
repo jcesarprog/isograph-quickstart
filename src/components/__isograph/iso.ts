@@ -1,4 +1,5 @@
 import type {IsographEntrypoint} from '@isograph/react';
+import entrypoint_Root__HomePage from '../__isograph/Root/HomePage/entrypoint.ts'
 import { ResolverParameterType as field_Root__HomePage } from './Root/HomePage/reader.ts'
 
 type IdentityWithParam<TParam> = <TResolverReturn>(
@@ -14,6 +15,10 @@ type MatchesWhitespaceAndString<
   TString extends string,
   T
 > = Whitespace<T> extends `${TString}${string}` ? T : never;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'entrypoint Root.HomePage', T>
+): typeof entrypoint_Root__HomePage;
 
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'field Root.HomePage', T>
