@@ -1,5 +1,6 @@
 import type {ReaderArtifact, ReaderAst} from '@isograph/react';
 import { HomePage as resolver } from '../../../HomePage.tsx';
+import Film__EpisodeTitle, { ReadOutType as Film__EpisodeTitle__outputType } from '../../Film/EpisodeTitle/reader';
 
 // the type, when read out (either via useLazyReference or via graph)
 export type ReadOutType = (React.FC<any>);
@@ -27,15 +28,16 @@ const readerAst: ReaderAst<ReadFromStoreType> = [
           },
           {
             kind: "Scalar",
-            fieldName: "title",
+            fieldName: "episodeID",
             alias: null,
             arguments: null,
           },
           {
-            kind: "Scalar",
-            fieldName: "episodeID",
-            alias: null,
+            kind: "Resolver",
+            alias: "EpisodeTitle",
             arguments: null,
+            readerArtifact: Film__EpisodeTitle,
+            usedRefetchQueries: [],
           },
         ],
       },
@@ -48,8 +50,8 @@ export type ResolverParameterType = { data:
   allFilms: ({
     films: (({
       id: string,
-      title: (string | null),
       episodeID: (number | null),
+      EpisodeTitle: Film__EpisodeTitle__outputType,
     } | null))[],
   } | null),
 },
