@@ -99,40 +99,40 @@
     wrap-ansi "^8.1.0"
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
-"@isograph/babel-plugin@^0.0.0-main-89fdf4a8":
-  version "0.0.0-main-89fdf4a8"
-  resolved "https://registry.yarnpkg.com/@isograph/babel-plugin/-/babel-plugin-0.0.0-main-89fdf4a8.tgz#4ee0bd8e92f4224f388fce3f92e4dcfd1a209099"
-  integrity sha512-yQT9Q89Cy9CKQXwmbvTM5890wTBvinGqy6TsfUfVEmlk/Vc3HPAODkwkl7OOQ+8N6ArSDZcfiAk2j/tY9MGvQQ==
+"@isograph/babel-plugin@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@isograph/babel-plugin/-/babel-plugin-0.1.0.tgz#1f6e30c57524d8e8c97226e3561e7012053fb2ee"
+  integrity sha512-9KCLawdKBLQoIOyt+/mWCEBkRlnjAz7uosHs6dOGXVsDPM0YIEQdVYW2vBpUBRaa+VO5BcleNVyB6ZXpgBLH7w==
   dependencies:
     babel-plugin-macros "^2.0.0"
     cosmiconfig "^5.0.5"
     graphql "15.3.0"
 
-"@isograph/compiler@^0.0.0-main-89fdf4a8":
-  version "0.0.0-main-89fdf4a8"
-  resolved "https://registry.yarnpkg.com/@isograph/compiler/-/compiler-0.0.0-main-89fdf4a8.tgz#5e887e91a1fa5f8146cf6d57cd1a408d750cf8f3"
-  integrity sha512-Aq3HdqkFHSfuiel7mhiZEJ3a53tb4R2kuHJatuiX57t1bJd4SjwtjMzpZREBaRxksLrKDo0APsZ10vRap9S+Sw==
+"@isograph/compiler@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@isograph/compiler/-/compiler-0.1.0.tgz#0a3b716102230f739b80cd71029718913e051d6d"
+  integrity sha512-EeDFa8Qza9jjNyTepxcDvhzh+hfcnmbm2gYtHgvqrKFs329slorKHCKOVd+4odg3NVLOTJ3kiV52jWhRXcm9/w==
 
-"@isograph/disposable-types@0.0.0-main-89fdf4a8":
-  version "0.0.0-main-89fdf4a8"
-  resolved "https://registry.yarnpkg.com/@isograph/disposable-types/-/disposable-types-0.0.0-main-89fdf4a8.tgz#bbf723f9c791762594c335a31d204027d52f91f9"
-  integrity sha512-sSDx2mBnCBvDfw0RfR0dx45Wa9U0cdzfh32SxB4pFH3xKFilR3hB2ta7biD6aQUSDZiDskLqgyTVmKl99DpIDg==
+"@isograph/disposable-types@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@isograph/disposable-types/-/disposable-types-0.1.0.tgz#918bd6bedeb7964332355cd62250a0be68c56ade"
+  integrity sha512-Ovcwd59uxSK4Nd1RUJQ1/yJDmbG0C38AkNJPSteIS3YXwSLbtKhMtfXY+yQAE1DfzIjyDmKJ7YWF7kQCDmr+Kw==
 
-"@isograph/react-disposable-state@0.0.0-main-89fdf4a8":
-  version "0.0.0-main-89fdf4a8"
-  resolved "https://registry.yarnpkg.com/@isograph/react-disposable-state/-/react-disposable-state-0.0.0-main-89fdf4a8.tgz#491e0d7e151842ac6adbb791bfc252b1c42ce6a4"
-  integrity sha512-nyGv0EpvfllH1EwQpq0ynI+Qz+qm1ZM0OwMarGBC8YWddsjYfx+XfUFC3bpXEElDCTHUPaL/kS+Tkbve+EYv2g==
+"@isograph/react-disposable-state@*":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@isograph/react-disposable-state/-/react-disposable-state-0.1.0.tgz#c29e803b628893f8f8177ec54f14cda5cb8195fe"
+  integrity sha512-Fd9Iwy4/6rgDynCbGdfHw+jtO6lnCCqRqQwlwLlixd8mH4tLog/2zMl4ZKo9s/YmDoZnGIrJHq1EJaUo+TuJhQ==
   dependencies:
-    "@isograph/disposable-types" "0.0.0-main-89fdf4a8"
+    "@isograph/disposable-types" "0.1.0"
     react "^18.2.0"
 
-"@isograph/react@^0.0.0-main-89fdf4a8":
-  version "0.0.0-main-89fdf4a8"
-  resolved "https://registry.yarnpkg.com/@isograph/react/-/react-0.0.0-main-89fdf4a8.tgz#e2c90fbcd092fd226e16510f686179bc379b98c0"
-  integrity sha512-JyTCFyVrhZ1DGtghYtLnA4pOD3fLzpQdacsonTBMGvUS8NjM/FiMgdS5VfsPXh6SfAcPNffKyCUMLvZhD5dCsw==
+"@isograph/react@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@isograph/react/-/react-0.1.0.tgz#cb8481e726893cea4b39473392b2451efc7eb356"
+  integrity sha512-kIuQRJStp4O1QM/Hc4qL02+/jJHGAUOMTNjucin+aMTR6uEirCCWrMknYvg+CkMhiFiCZI3czOEe21MuvafDdA==
   dependencies:
-    "@isograph/disposable-types" "0.0.0-main-89fdf4a8"
-    "@isograph/react-disposable-state" "0.0.0-main-89fdf4a8"
+    "@isograph/disposable-types" "0.1.0"
+    "@isograph/react-disposable-state" "*"
     react "^18.2.0"
 
 "@next/env@14.1.0":
