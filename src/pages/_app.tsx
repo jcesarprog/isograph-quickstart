@@ -7,16 +7,13 @@ import type { AppProps } from "next/app";
 import { useMemo } from "react";
 
 function makeNetworkRequest<T>(queryText: string, variables: any): Promise<T> {
-  const promise = fetch(
-    "https://swapi-graphql.netlify.app/.netlify/functions/index",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ query: queryText, variables }),
-    }
-  ).then(async (response) => {
+  const promise = fetch("https://graphql.org/graphql/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ query: queryText, variables }),
+  }).then(async (response) => {
     const json = await response.json();
 
     if (response.ok) {
