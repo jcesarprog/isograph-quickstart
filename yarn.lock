@@ -179,48 +179,48 @@
     wrap-ansi "^8.1.0"
     wrap-ansi-cjs "npm:wrap-ansi@^7.0.0"
 
-"@isograph/babel-plugin@0.0.0-main-caf6212b":
-  version "0.0.0-main-caf6212b"
-  resolved "https://registry.yarnpkg.com/@isograph/babel-plugin/-/babel-plugin-0.0.0-main-caf6212b.tgz#dd9cbda74bed38308b6d5ff5a870d0bf6fd4f67d"
-  integrity sha512-5wzYZyL2osEcyDdBWpKkMzxpGEsUd3TlHBV+gI6LGGUarwsp3pNiQujuefPf6Lh1IPJ1y88JFnh3xwHaf0uCiQ==
+"@isograph/babel-plugin@0.0.0-main-b372ca91":
+  version "0.0.0-main-b372ca91"
+  resolved "https://registry.yarnpkg.com/@isograph/babel-plugin/-/babel-plugin-0.0.0-main-b372ca91.tgz#bdd135221c38d5d748cfab41309c80c7b401b3cc"
+  integrity sha512-IRwUMdX2a5aLWfZ8xS48PV1mi6TYI1bm5D4KniAffyaXgeQMcHInHTJz7kQ2UGcjoK3/PYD6hEHORserhBUeWg==
   dependencies:
     "@babel/helper-module-imports" "^7.0.0"
     babel-plugin-macros "^2.0.0"
     cosmiconfig "^5.0.5"
     graphql "15.3.0"
 
-"@isograph/compiler@0.0.0-main-caf6212b":
-  version "0.0.0-main-caf6212b"
-  resolved "https://registry.yarnpkg.com/@isograph/compiler/-/compiler-0.0.0-main-caf6212b.tgz#fe234e80abd930319f3694f8344b1f6af86530b3"
-  integrity sha512-ZxHsMe/gS5EfD8v6v4dk3YZ6efiCItwz67BFiRFMTlMo8sW6612Dmsf3E1TtPBEsQI1ZR59rwV+bwf2hfawwcA==
+"@isograph/compiler@0.0.0-main-b372ca91":
+  version "0.0.0-main-b372ca91"
+  resolved "https://registry.yarnpkg.com/@isograph/compiler/-/compiler-0.0.0-main-b372ca91.tgz#e887c177d23ada8fd35a7837300ffa6d4155d636"
+  integrity sha512-wNm7EkhJd9oV/zDGhfLDTBq27yidYIflZJmchItFDntlXcfC/rTkEX5n2EXfS3heN+0kW4mILUKvDhwg3mCryw==
 
-"@isograph/disposable-types@0.0.0-main-caf6212b":
-  version "0.0.0-main-caf6212b"
-  resolved "https://registry.yarnpkg.com/@isograph/disposable-types/-/disposable-types-0.0.0-main-caf6212b.tgz#2cb2678124b92aa91c44c9d0a11ae54a6e76eae4"
-  integrity sha512-O0Ulvn3FR7Ap64cJwo0qbqe+TeNQW5HiV1K+V5CnFgtUtUBGINZ49/ec9yURVfxvQFtI6ZvwVFbreuORNmlHJw==
+"@isograph/disposable-types@0.0.0-main-b372ca91":
+  version "0.0.0-main-b372ca91"
+  resolved "https://registry.yarnpkg.com/@isograph/disposable-types/-/disposable-types-0.0.0-main-b372ca91.tgz#c8c2e8703491dc5cdfb09c3e9342b6d61891de29"
+  integrity sha512-chT9fYMjgJAfdLVio+6Nwl/MX5Jr28HxcQxBdj8CnlIKCLc2Mbbq2K3iGAyeKt1sj7qo/Tn9o8IrEo5h5ZOa8Q==
 
-"@isograph/react-disposable-state@0.0.0-main-caf6212b":
-  version "0.0.0-main-caf6212b"
-  resolved "https://registry.yarnpkg.com/@isograph/react-disposable-state/-/react-disposable-state-0.0.0-main-caf6212b.tgz#fe405a9f25b92857d1f9e9678caebd1cd19ea851"
-  integrity sha512-bDiEdkYbSSMRx76Ci2NTDuJKYAHjQkwQz6oOGLbVcEm1usdNGrovgq8jUYYHM9hmfeb5AuBMimPKtK7XCscZhA==
+"@isograph/react-disposable-state@0.0.0-main-b372ca91":
+  version "0.0.0-main-b372ca91"
+  resolved "https://registry.yarnpkg.com/@isograph/react-disposable-state/-/react-disposable-state-0.0.0-main-b372ca91.tgz#cabf1f867fa99bb2426cc3799495328aa237af06"
+  integrity sha512-5Xs/gQZgU/CwGKILrdbkBc3sL5zwqIDLKPvpFUnKZ5x8rPf3Ao2IB2cwB+GUaXFYjmzNYYXiFWcmTOnqq7kkIQ==
   dependencies:
-    "@isograph/disposable-types" "0.0.0-main-caf6212b"
+    "@isograph/disposable-types" "0.0.0-main-b372ca91"
 
-"@isograph/react@0.0.0-main-caf6212b":
-  version "0.0.0-main-caf6212b"
-  resolved "https://registry.yarnpkg.com/@isograph/react/-/react-0.0.0-main-caf6212b.tgz#0f8c3cd4e11cfd1699e001cb113e96818fd93a00"
-  integrity sha512-eWN8SaO8xOl9NQTuJhbCVliOUWQDzQVjmmF1Ek9ZsznApRsWPO8UZWC0QxjbY9qkjGxOVZZXCILl0iQa4Aj1ZA==
+"@isograph/react@0.0.0-main-b372ca91":
+  version "0.0.0-main-b372ca91"
+  resolved "https://registry.yarnpkg.com/@isograph/react/-/react-0.0.0-main-b372ca91.tgz#234ebea039e23ea2d9d77a2ca60039e828d79e07"
+  integrity sha512-0c4nOjeJioqjQL61Pr+LR2AK3X4vhkmJDmAkWG0CQCtj8ZJHBI5HK+9fu3DHdcy2Q1laUVVNu64tUrbQIYFqPg==
   dependencies:
-    "@isograph/disposable-types" "0.0.0-main-caf6212b"
-    "@isograph/react-disposable-state" "0.0.0-main-caf6212b"
-    "@isograph/reference-counted-pointer" "0.0.0-main-caf6212b"
+    "@isograph/disposable-types" "0.0.0-main-b372ca91"
+    "@isograph/react-disposable-state" "0.0.0-main-b372ca91"
+    "@isograph/reference-counted-pointer" "0.0.0-main-b372ca91"
 
-"@isograph/reference-counted-pointer@0.0.0-main-caf6212b":
-  version "0.0.0-main-caf6212b"
-  resolved "https://registry.yarnpkg.com/@isograph/reference-counted-pointer/-/reference-counted-pointer-0.0.0-main-caf6212b.tgz#f2268ed19bb93a36b3165e388f7b383e557b51c0"
-  integrity sha512-gHAp3lKYb7+BT09ykli6Fn8sOrR2KjEwSsTVnCr7zOI2RP6KE49pUsQUgnFnt1LzyBHaPfGWohPbPjyGPmilSQ==
+"@isograph/reference-counted-pointer@0.0.0-main-b372ca91":
+  version "0.0.0-main-b372ca91"
+  resolved "https://registry.yarnpkg.com/@isograph/reference-counted-pointer/-/reference-counted-pointer-0.0.0-main-b372ca91.tgz#c0b98b0f62f0cfdabcd479c400314d02b0cef415"
+  integrity sha512-sTm7y18BLr/Dctl3z019IOmzScUzGv1M372GVYFfBAN48/KkYfw7n7Bj35ZOhsCauqSknrOMFWqKgaFUnBiH4Q==
   dependencies:
-    "@isograph/disposable-types" "0.0.0-main-caf6212b"
+    "@isograph/disposable-types" "0.0.0-main-b372ca91"
 
 "@jridgewell/gen-mapping@^0.3.12":
   version "0.3.12"
