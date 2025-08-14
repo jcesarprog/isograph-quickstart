@@ -4,7 +4,8 @@ import { iso } from "@iso";
 
 export default function HomePageRoute() {
   const { fragmentReference } = useLazyReference(
-    iso(`entrypoint Root.HomePage`),
+    iso(`
+  entrypoint Query.HomePage`),
     {
       /* query variables */
     }

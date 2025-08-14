@@ -15,14 +15,14 @@ function toSorted<T>(
 }
 
 export const HomePage = iso(`
-  field Root.HomePage @component {
+  field Query.HomePage @component {
     allFilms {
       films {
-        id,
-        episodeID,
-        EpisodeTitle,
-      },
-    },
+        id
+        episodeID
+        EpisodeTitle
+      }
+    }
   }
 `)(function HomePageComponent(props) {
   const films = useMemo(
