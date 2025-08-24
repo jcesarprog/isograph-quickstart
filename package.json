@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@isograph/babel-plugin": "^0.3.1",
     "@isograph/compiler": "^0.3.1",
     "@isograph/react": "^0.3.1",
@@ -23,6 +24,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.0",
+    "prettier": "^3.6.2",
     "typescript": "^5"
   },
   "packageManager": "pnpm@10.15.0"
