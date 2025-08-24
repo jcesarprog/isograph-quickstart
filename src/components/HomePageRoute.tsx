@@ -1,14 +1,13 @@
-import React from "react";
-import { useLazyReference, useResult } from "@isograph/react";
-import { iso } from "@iso";
+import { iso } from '@iso';
+import { useLazyReference, useResult } from '@isograph/react';
+import React from 'react';
 
 export default function HomePageRoute() {
   const { fragmentReference } = useLazyReference(
-    iso(`
-  entrypoint Query.HomePage`),
+    iso(`entrypoint Root.HomePage`),
     {
       /* query variables */
-    }
+    },
   );
   const Component = useResult(fragmentReference);
   return <Component />;

@@ -1,9 +1,9 @@
 import type {ComponentReaderArtifact, ExtractSecondParam, ReaderAst } from '@isograph/react';
-import { Query__HomePage__param } from './param_type';
+import { Root__HomePage__param } from './param_type';
 import { HomePage as resolver } from '../../../HomePage';
 import Film__EpisodeTitle__resolver_reader from '../../Film/EpisodeTitle/resolver_reader';
 
-const readerAst: ReaderAst<Query__HomePage__param> = [
+const readerAst: ReaderAst<Root__HomePage__param> = [
   {
     kind: "Linked",
     fieldName: "allFilms",
@@ -50,11 +50,11 @@ const readerAst: ReaderAst<Query__HomePage__param> = [
 ];
 
 const artifact: ComponentReaderArtifact<
-  Query__HomePage__param,
+  Root__HomePage__param,
   ExtractSecondParam<typeof resolver>
 > = {
   kind: "ComponentReaderArtifact",
-  fieldName: "Query.HomePage",
+  fieldName: "Root.HomePage",
   resolver,
   readerAst,
   hasUpdatable: false,

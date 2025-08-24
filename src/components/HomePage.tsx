@@ -1,5 +1,5 @@
-import React, { useMemo } from "react";
-import { iso } from "@iso";
+import { iso } from '@iso';
+import React, { useMemo } from 'react';
 
 function nonNullable<T>(value: T): value is NonNullable<T> {
   return value != null;
@@ -7,7 +7,7 @@ function nonNullable<T>(value: T): value is NonNullable<T> {
 
 function toSorted<T>(
   arr: readonly T[],
-  comparator: (a: T, b: T) => number
+  comparator: (a: T, b: T) => number,
 ): T[] {
   const sorted = [...arr];
   sorted.sort(comparator);
@@ -15,7 +15,7 @@ function toSorted<T>(
 }
 
 export const HomePage = iso(`
-  field Query.HomePage @component {
+  field Root.HomePage @component {
     allFilms {
       films {
         id
@@ -30,12 +30,12 @@ export const HomePage = iso(`
       toSorted(props.data.allFilms?.films ?? [], (film1, film2) => {
         if (film1?.episodeID == null || film2?.episodeID == null) {
           throw new Error(
-            "This API should not return null films or null episode IDs."
+            'This API should not return null films or null episode IDs.',
           );
         }
         return film1.episodeID > film2.episodeID ? 1 : -1;
       }).filter(nonNullable),
-    [props.data.allFilms?.films]
+    [props.data.allFilms?.films],
   );
 
   return (

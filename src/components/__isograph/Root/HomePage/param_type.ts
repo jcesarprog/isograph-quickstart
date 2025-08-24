@@ -1,6 +1,6 @@
 import { type Film__EpisodeTitle__output_type } from '../../Film/EpisodeTitle/output_type';
 
-export type Query__HomePage__param = {
+export type Root__HomePage__param = {
   readonly data: {
     readonly allFilms: ({
       /**

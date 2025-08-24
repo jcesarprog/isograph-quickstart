@@ -1,5 +1,5 @@
 schema {
-  query: Query
+  query: Root
 }
 
 """
@@ -916,7 +916,7 @@ type PlanetsEdge {
   cursor: String!
 }
 
-type Query {
+type Root {
   allFilms(
     after: String
     first: Int
