@@ -1,9 +1,0 @@
-**/__isograph/**
-**/build/**
-**/target/**
-**/pnpm-lock.yaml
-**/.docusaurus/**
-**/dist/**
-**/relay-crates/**
-isograph-config-schema.json
-**/tests/fixtures/**
