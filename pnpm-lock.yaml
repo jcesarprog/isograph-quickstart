@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@isograph/react':
+        specifier: 0.0.0-main-caf6212b
+        version: 0.0.0-main-caf6212b(react@19.1.0)
       next:
         specifier: 15.5.0
         version: 15.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -30,9 +33,6 @@ importers:
       '@isograph/compiler':
         specifier: 0.0.0-main-caf6212b
         version: 0.0.0-main-caf6212b
-      '@isograph/react':
-        specifier: 0.0.0-main-caf6212b
-        version: 0.0.0-main-caf6212b(react@19.1.0)
       '@types/node':
         specifier: ^20
         version: 20.19.11

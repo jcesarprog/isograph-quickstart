@@ -11,14 +11,14 @@
   "dependencies": {
     "next": "15.5.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "@isograph/react": "0.0.0-main-caf6212b"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@isograph/babel-plugin": "0.0.0-main-caf6212b",
     "@isograph/compiler": "0.0.0-main-caf6212b",
-    "@isograph/react": "0.0.0-main-caf6212b",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
