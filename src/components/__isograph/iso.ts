@@ -1,4 +1,5 @@
 import type { IsographEntrypoint } from '@isograph/react';
+import { type Root__HomePage__param } from './Root/HomePage/param_type';
 
 // This is the type given to regular client fields.
 // This means that the type of the exported iso literal is exactly
@@ -47,6 +48,10 @@ type MatchesWhitespaceAndString<
   TString extends string,
   T
 > = Whitespace<T> extends `${TString}${string}` ? T : never;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Root.HomePage', T>
+): IdentityWithParamComponent<Root__HomePage__param>;
 
 export function iso(_isographLiteralText: string):
   | IdentityWithParam<any>
