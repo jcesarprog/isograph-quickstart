@@ -9,14 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@isograph/react": "0.0.0-main-7459c36d",
+    "@isograph/react": "0.0.0-main-620f4c6f",
     "next": "14.1.0",
     "react": "^19",
     "react-dom": "^19"
   },
   "devDependencies": {
-    "@isograph/babel-plugin": "0.0.0-main-7459c36d",
-    "@isograph/compiler": "0.0.0-main-7459c36d",
+    "@isograph/babel-plugin": "0.0.0-main-620f4c6f",
+    "@isograph/compiler": "0.0.0-main-620f4c6f",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
