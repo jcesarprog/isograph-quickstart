@@ -9,14 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@isograph/react": "0.0.0-main-caf6212b",
+<<<<<<< Updated upstream
+    "@isograph/react": "0.0.0-main-7459c36d",
+=======
+    "@isograph/react": "0.0.0-main-b39aba1c",
+>>>>>>> Stashed changes
     "next": "14.1.0",
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "^19",
+    "react-dom": "^19"
   },
   "devDependencies": {
-    "@isograph/babel-plugin": "0.0.0-main-caf6212b",
-    "@isograph/compiler": "0.0.0-main-caf6212b",
+<<<<<<< Updated upstream
+    "@isograph/babel-plugin": "0.0.0-main-7459c36d",
+    "@isograph/compiler": "0.0.0-main-7459c36d",
+=======
+    "@isograph/babel-plugin": "0.0.0-main-b39aba1c",
+    "@isograph/compiler": "0.0.0-main-b39aba1c",
+>>>>>>> Stashed changes
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
