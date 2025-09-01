@@ -9,10 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@isograph/react": "0.0.0-main-caf6212b",
     "next": "15.5.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "@isograph/react": "0.0.0-main-caf6212b"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -24,6 +24,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "prettier": "^3.6.2",
     "typescript": "^5"
   },

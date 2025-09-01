@@ -1,7 +1,8 @@
+import type { PokemonWithClientFields } from '@/types';
 import { Suspense } from 'react';
 
 type PokemonDetailRouteProps = {
-  pokemon: any;
+  pokemon: PokemonWithClientFields;
   onBack: () => void;
 };
 

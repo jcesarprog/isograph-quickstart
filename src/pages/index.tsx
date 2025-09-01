@@ -1,11 +1,13 @@
 import PokemonDetailRoute from '@/components/PokemonDetailRoute';
+import type { PokemonWithClientFields } from '@/types';
 import { iso } from '@iso';
 import { useLazyReference, useResult } from '@isograph/react';
 import Head from 'next/head';
 import { useCallback, useState } from 'react';
 
 export default function Home() {
-  const [selectedPokemon, setSelectedPokemon] = useState<any | null>(null);
+  const [selectedPokemon, setSelectedPokemon] =
+    useState<PokemonWithClientFields | null>(null);
 
   // Keep the entrypoint at the top level so it doesn't unmount
   const { fragmentReference } = useLazyReference(
@@ -20,7 +22,7 @@ export default function Home() {
   // Get the PokemonList component
   const PokemonListComponent = useResult(fragmentReference);
 
-  const handlePokemonClick = useCallback((pokemon: any) => {
+  const handlePokemonClick = useCallback((pokemon: PokemonWithClientFields) => {
     setSelectedPokemon(pokemon);
   }, []);
 

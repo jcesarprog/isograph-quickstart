@@ -1,4 +1,4 @@
-import type { PokemonT } from '@/types';
+import type { PokemonWithClientFields } from '@/types';
 import { iso } from '@iso';
 import React from 'react';
 
@@ -13,7 +13,9 @@ export const PokemonList = iso(`
   }
 `)(function PokemonListComponent(
   { data },
-  componentProps: { onPokemonClick: (pokemon: any) => void },
+  componentProps: {
+    onPokemonClick: (pokemon: PokemonWithClientFields) => void;
+  },
 ) {
   return (
     <div
