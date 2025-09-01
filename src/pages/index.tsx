@@ -1,7 +1,8 @@
+import PokemonDetailRoute from '@/components/PokemonDetailRoute';
 import { iso } from '@iso';
 import { useLazyReference, useResult } from '@isograph/react';
 import Head from 'next/head';
-import { Suspense, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 export default function Home() {
   const [selectedPokemon, setSelectedPokemon] = useState<any | null>(null);
@@ -34,36 +35,10 @@ export default function Home() {
       </Head>
       <div>
         {selectedPokemon ? (
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
-          >
-            <Suspense
-              fallback={
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    flexDirection: 'column',
-                    padding: '20px',
-                  }}
-                >
-                  <h1>{selectedPokemon.name}</h1>
-                  <div>Loading pokemon details...</div>
-                </div>
-              }
-            >
-              <selectedPokemon.Pokemon />
-            </Suspense>
-            <button onClick={handleBackClick} style={{ marginTop: '20px' }}>
-              ← Back to List
-            </button>
-          </div>
+          <PokemonDetailRoute
+            pokemon={selectedPokemon}
+            onBack={handleBackClick}
+          />
         ) : (
           <PokemonListComponent onPokemonClick={handlePokemonClick} />
         )}
