@@ -1,4 +1,4 @@
-export type Pokemon = {
+export type PokemonT = {
   readonly id: string;
   readonly name: string;
   readonly number: string;

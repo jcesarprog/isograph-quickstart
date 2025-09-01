@@ -1,27 +1,22 @@
 import { Pokemon } from '@/components/Pokemon';
-import type { Pokemon as PokemonType } from '@/types';
-import { iso } from '@iso';
+import { PokemonListEntrypoint } from '@/components/PokemonListEntrypoint';
+import type { PokemonT } from '@/types';
 import { useLazyReference, useResult } from '@isograph/react';
 import Head from 'next/head';
 import { useCallback, useState } from 'react';
 
 export default function Home() {
-  const [selectedPokemon, setSelectedPokemon] = useState<PokemonType | null>(
-    null,
-  );
+  const [selectedPokemon, setSelectedPokemon] = useState<PokemonT | null>(null);
 
   // Keep the entrypoint at the top level so it doesn't unmount
-  const { fragmentReference } = useLazyReference(
-    iso(`entrypoint Query.PokemonList`),
-    {
-      /* query variables */
-    },
-  );
+  const { fragmentReference } = useLazyReference(PokemonListEntrypoint, {
+    /* query variables */
+  });
 
   // Get the PokemonList component
   const PokemonListComponent = useResult(fragmentReference);
 
-  const handlePokemonClick = useCallback((pokemon: PokemonType) => {
+  const handlePokemonClick = useCallback((pokemon: PokemonT) => {
     setSelectedPokemon(pokemon);
   }, []);
 

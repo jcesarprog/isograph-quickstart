@@ -1,4 +1,4 @@
-import type { Pokemon as PokemonType } from '@/types';
+import type { PokemonT } from '@/types';
 import { iso } from '@iso';
 import React from 'react';
 
@@ -29,7 +29,7 @@ export const PokemonList = iso(`
   }
 `)(function PokemonListComponent(
   { data },
-  componentProps: { onPokemonClick: (pokemon: PokemonType) => void },
+  componentProps: { onPokemonClick: (pokemon: PokemonT) => void },
 ) {
   return (
     <div

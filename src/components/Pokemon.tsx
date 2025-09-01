@@ -1,7 +1,7 @@
-import type { Pokemon } from '@/types';
+import type { PokemonT } from '@/types';
 
 type PokemonProps = {
-  pokemon: Pokemon;
+  pokemon: PokemonT;
   onBack: () => void;
 };
 
