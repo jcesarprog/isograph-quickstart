@@ -1,3 +1,4 @@
+import '../styles/globals.css';
 import {
   createIsographEnvironment,
   createIsographStore,
@@ -63,21 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
   );
   return (
     <IsographEnvironmentProvider environment={environment}>
-      <Suspense
-        fallback={
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              height: '100vh',
-              fontSize: '18px',
-            }}
-          >
-            Loading...
-          </div>
-        }
-      >
+      <Suspense fallback={<div className="app-loading">Loading...</div>}>
         <Component {...pageProps} />
       </Suspense>
     </IsographEnvironmentProvider>

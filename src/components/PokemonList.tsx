@@ -18,14 +18,7 @@ export const PokemonList = iso(`
   },
 ) {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column',
-        alignItems: 'center',
-      }}
-    >
+    <div className="pokemon-list">
       <h1>Pokemon List</h1>
       <ul>
         {data.pokemons.map((pokemon) => (

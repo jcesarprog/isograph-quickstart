@@ -24,14 +24,7 @@ export const Pokemon = iso(`
   }
 `)(function PokemonComponent({ data }) {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column',
-        alignItems: 'center',
-      }}
-    >
+    <div className="pokemon-component">
       <h1>{data.name}</h1>
       <img src={data.image} alt={data.name} width="200" />
       <p>Number: #{data.number}</p>
