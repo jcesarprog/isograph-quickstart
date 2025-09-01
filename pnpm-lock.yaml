@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@isograph/react':
-        specifier: 0.0.0-main-caf6212b
-        version: 0.0.0-main-caf6212b(react@19.1.0)
+        specifier: ' 0.0.0-main-cf47f561'
+        version: 0.0.0-main-cf47f561(react@19.1.0)
       next:
         specifier: 15.5.0
         version: 15.5.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -319,21 +319,21 @@ packages:
     resolution: {integrity: sha512-ZxHsMe/gS5EfD8v6v4dk3YZ6efiCItwz67BFiRFMTlMo8sW6612Dmsf3E1TtPBEsQI1ZR59rwV+bwf2hfawwcA==}
     hasBin: true
 
-  '@isograph/disposable-types@0.0.0-main-caf6212b':
-    resolution: {integrity: sha512-O0Ulvn3FR7Ap64cJwo0qbqe+TeNQW5HiV1K+V5CnFgtUtUBGINZ49/ec9yURVfxvQFtI6ZvwVFbreuORNmlHJw==}
+  '@isograph/disposable-types@0.0.0-main-cf47f561':
+    resolution: {integrity: sha512-qgxNcdKaUDvrcMeS2u3bAOX7QnOsNoZdiBjvlXxkMomdWHcKX01F09Yi+wnqIzc62vIZksu4bWd9X8/Df9nFSQ==}
 
-  '@isograph/react-disposable-state@0.0.0-main-caf6212b':
-    resolution: {integrity: sha512-bDiEdkYbSSMRx76Ci2NTDuJKYAHjQkwQz6oOGLbVcEm1usdNGrovgq8jUYYHM9hmfeb5AuBMimPKtK7XCscZhA==}
+  '@isograph/react-disposable-state@0.0.0-main-cf47f561':
+    resolution: {integrity: sha512-7ZcdMT9a0btYvzTsFbsIAJw73K66ESkrHd9/Mqhk1x3HHsjlUowvO/EctZj35mT0s9M9b1YvJh48lmJS4Rx2Lw==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
-  '@isograph/react@0.0.0-main-caf6212b':
-    resolution: {integrity: sha512-eWN8SaO8xOl9NQTuJhbCVliOUWQDzQVjmmF1Ek9ZsznApRsWPO8UZWC0QxjbY9qkjGxOVZZXCILl0iQa4Aj1ZA==}
+  '@isograph/react@0.0.0-main-cf47f561':
+    resolution: {integrity: sha512-RZ/rd/InHxLpeoeF4TI9S/0buKFDhOICmvMEtT9Ib8rtD5lktqHpVMWr14cFtGxjS+VEXL4X1vGlJNfw+QsaRw==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
 
-  '@isograph/reference-counted-pointer@0.0.0-main-caf6212b':
-    resolution: {integrity: sha512-gHAp3lKYb7+BT09ykli6Fn8sOrR2KjEwSsTVnCr7zOI2RP6KE49pUsQUgnFnt1LzyBHaPfGWohPbPjyGPmilSQ==}
+  '@isograph/reference-counted-pointer@0.0.0-main-cf47f561':
+    resolution: {integrity: sha512-0WjvFPQQuALdko9E0tDR+8cX6J5bybJ9VqNFlcMZpa+T8vDHVh+kIeLgcBC59aVIb7eQnSCcNQEF+J1nujyoLg==}
 
   '@jridgewell/gen-mapping@0.3.13':
     resolution: {integrity: sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==}
@@ -2019,23 +2019,23 @@ snapshots:
 
   '@isograph/compiler@0.0.0-main-caf6212b': {}
 
-  '@isograph/disposable-types@0.0.0-main-caf6212b': {}
+  '@isograph/disposable-types@0.0.0-main-cf47f561': {}
 
-  '@isograph/react-disposable-state@0.0.0-main-caf6212b(react@19.1.0)':
+  '@isograph/react-disposable-state@0.0.0-main-cf47f561(react@19.1.0)':
     dependencies:
-      '@isograph/disposable-types': 0.0.0-main-caf6212b
+      '@isograph/disposable-types': 0.0.0-main-cf47f561
       react: 19.1.0
 
-  '@isograph/react@0.0.0-main-caf6212b(react@19.1.0)':
+  '@isograph/react@0.0.0-main-cf47f561(react@19.1.0)':
     dependencies:
-      '@isograph/disposable-types': 0.0.0-main-caf6212b
-      '@isograph/react-disposable-state': 0.0.0-main-caf6212b(react@19.1.0)
-      '@isograph/reference-counted-pointer': 0.0.0-main-caf6212b
+      '@isograph/disposable-types': 0.0.0-main-cf47f561
+      '@isograph/react-disposable-state': 0.0.0-main-cf47f561(react@19.1.0)
+      '@isograph/reference-counted-pointer': 0.0.0-main-cf47f561
       react: 19.1.0
 
-  '@isograph/reference-counted-pointer@0.0.0-main-caf6212b':
+  '@isograph/reference-counted-pointer@0.0.0-main-cf47f561':
     dependencies:
-      '@isograph/disposable-types': 0.0.0-main-caf6212b
+      '@isograph/disposable-types': 0.0.0-main-cf47f561
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:

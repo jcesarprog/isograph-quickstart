@@ -9,7 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@isograph/react": "0.0.0-main-caf6212b",
+    "@isograph/react": " 0.0.0-main-cf47f561",
     "next": "15.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
