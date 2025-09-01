@@ -10,7 +10,7 @@ function makeNetworkRequest<T>(
   queryText: string,
   variables: unknown,
 ): Promise<T> {
-  const promise = fetch('https://graphql.org/graphql/', {
+  const promise = fetch('https://graphql-pokemon2.vercel.app/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
