@@ -110,6 +110,8 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 14px;
+  min-width: 160px;
+  text-align: left;
 }
 
 .pokemon-list button:hover {
