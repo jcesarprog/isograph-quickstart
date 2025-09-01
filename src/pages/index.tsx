@@ -34,7 +34,14 @@ export default function Home() {
       </Head>
       <div>
         {selectedPokemon ? (
-          <div>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}
+          >
             <Suspense
               fallback={
                 <div
