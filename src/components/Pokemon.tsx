@@ -1,4 +1,5 @@
 import { iso } from '@iso';
+import Image from 'next/image';
 
 export const Pokemon = iso(`
   field Pokemon.Pokemon @component {
@@ -26,7 +27,7 @@ export const Pokemon = iso(`
   return (
     <div className="pokemon-component">
       <h1>{data.name}</h1>
-      <img src={data.image} alt={data.name} width="200" />
+      <Image src={data.image} alt={data.name} width={200} height={200} />
       <p>Number: #{data.number}</p>
       <p>Classification: {data.classification}</p>
       <p>Types: {data.types.join(', ')}</p>
