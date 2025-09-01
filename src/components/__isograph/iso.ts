@@ -1,4 +1,5 @@
 import type { IsographEntrypoint } from '@isograph/react';
+import { type Pokemon__Pokemon__param } from './Pokemon/Pokemon/param_type';
 import { type Query__PokemonList__param } from './Query/PokemonList/param_type';
 import entrypoint_Query__PokemonList from '../__isograph/Query/PokemonList/entrypoint';
 
@@ -49,6 +50,10 @@ type MatchesWhitespaceAndString<
   TString extends string,
   T
 > = Whitespace<T> extends `${TString}${string}` ? T : never;
+
+export function iso<T>(
+  param: T & MatchesWhitespaceAndString<'field Pokemon.Pokemon', T>
+): IdentityWithParamComponent<Pokemon__Pokemon__param>;
 
 export function iso<T>(
   param: T & MatchesWhitespaceAndString<'field Query.PokemonList', T>

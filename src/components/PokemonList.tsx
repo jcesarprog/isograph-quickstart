@@ -8,28 +8,12 @@ export const PokemonList = iso(`
       id
       name
       number
-      image
-      types
-      classification
-      maxHP
-      maxCP
-      attacks {
-        fast {
-          name
-          type
-          damage
-        }
-        special {
-          name
-          type
-          damage
-        }
-      }
+      Pokemon
     }
   }
 `)(function PokemonListComponent(
   { data },
-  componentProps: { onPokemonClick: (pokemon: PokemonT) => void },
+  componentProps: { onPokemonClick: (pokemon: any) => void },
 ) {
   return (
     <div

@@ -48,8 +48,14 @@ export default function App({ Component, pageProps }: AppProps) {
       createIsographEnvironment(
         createIsographStore(),
         makeNetworkRequest,
-        // Optional missing field handler
-        null,
+        // Missing field handler to handle navigation from list to detail
+        (missingField) => {
+          console.log('Missing field detected:', missingField);
+          // For Pokemon detail views, we can show the name immediately
+          // while other fields load in the background
+          // Return undefined to let the system handle missing fields gracefully
+          return undefined;
+        },
         // Optional logger
         console.log,
       ),
@@ -57,7 +63,21 @@ export default function App({ Component, pageProps }: AppProps) {
   );
   return (
     <IsographEnvironmentProvider environment={environment}>
-      <Suspense fallback="loading">
+      <Suspense
+        fallback={
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: '100vh',
+              fontSize: '18px',
+            }}
+          >
+            Loading...
+          </div>
+        }
+      >
         <Component {...pageProps} />
       </Suspense>
     </IsographEnvironmentProvider>

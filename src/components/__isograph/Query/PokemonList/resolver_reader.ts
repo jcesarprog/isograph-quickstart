@@ -1,6 +1,7 @@
 import type {ComponentReaderArtifact, ExtractSecondParam, ReaderAst } from '@isograph/react';
 import { Query__PokemonList__param } from './param_type';
 import { PokemonList as resolver } from '../../../PokemonList';
+import Pokemon__Pokemon__resolver_reader from '../../Pokemon/Pokemon/resolver_reader';
 
 const readerAst: ReaderAst<Query__PokemonList__param> = [
   {
@@ -37,108 +38,11 @@ const readerAst: ReaderAst<Query__PokemonList__param> = [
         isUpdatable: false,
       },
       {
-        kind: "Scalar",
-        fieldName: "image",
-        alias: null,
+        kind: "Resolver",
+        alias: "Pokemon",
         arguments: null,
-        isUpdatable: false,
-      },
-      {
-        kind: "Scalar",
-        fieldName: "types",
-        alias: null,
-        arguments: null,
-        isUpdatable: false,
-      },
-      {
-        kind: "Scalar",
-        fieldName: "classification",
-        alias: null,
-        arguments: null,
-        isUpdatable: false,
-      },
-      {
-        kind: "Scalar",
-        fieldName: "maxHP",
-        alias: null,
-        arguments: null,
-        isUpdatable: false,
-      },
-      {
-        kind: "Scalar",
-        fieldName: "maxCP",
-        alias: null,
-        arguments: null,
-        isUpdatable: false,
-      },
-      {
-        kind: "Linked",
-        fieldName: "attacks",
-        alias: null,
-        arguments: null,
-        condition: null,
-        selections: [
-          {
-            kind: "Linked",
-            fieldName: "fast",
-            alias: null,
-            arguments: null,
-            condition: null,
-            selections: [
-              {
-                kind: "Scalar",
-                fieldName: "name",
-                alias: null,
-                arguments: null,
-                isUpdatable: false,
-              },
-              {
-                kind: "Scalar",
-                fieldName: "type",
-                alias: null,
-                arguments: null,
-                isUpdatable: false,
-              },
-              {
-                kind: "Scalar",
-                fieldName: "damage",
-                alias: null,
-                arguments: null,
-                isUpdatable: false,
-              },
-            ],
-          },
-          {
-            kind: "Linked",
-            fieldName: "special",
-            alias: null,
-            arguments: null,
-            condition: null,
-            selections: [
-              {
-                kind: "Scalar",
-                fieldName: "name",
-                alias: null,
-                arguments: null,
-                isUpdatable: false,
-              },
-              {
-                kind: "Scalar",
-                fieldName: "type",
-                alias: null,
-                arguments: null,
-                isUpdatable: false,
-              },
-              {
-                kind: "Scalar",
-                fieldName: "damage",
-                alias: null,
-                arguments: null,
-                isUpdatable: false,
-              },
-            ],
-          },
-        ],
+        readerArtifact: Pokemon__Pokemon__resolver_reader,
+        usedRefetchQueries: [],
       },
     ],
   },

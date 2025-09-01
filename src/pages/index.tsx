@@ -1,22 +1,25 @@
-import { Pokemon } from '@/components/Pokemon';
-import { PokemonListEntrypoint } from '@/components/PokemonListEntrypoint';
-import type { PokemonT } from '@/types';
+import { iso } from '@iso';
 import { useLazyReference, useResult } from '@isograph/react';
 import Head from 'next/head';
-import { useCallback, useState } from 'react';
+import { Suspense, useCallback, useState } from 'react';
 
 export default function Home() {
-  const [selectedPokemon, setSelectedPokemon] = useState<PokemonT | null>(null);
+  const [selectedPokemon, setSelectedPokemon] = useState<any | null>(null);
 
   // Keep the entrypoint at the top level so it doesn't unmount
-  const { fragmentReference } = useLazyReference(PokemonListEntrypoint, {
-    /* query variables */
-  });
+  const { fragmentReference } = useLazyReference(
+    iso(`
+    entrypoint Query.PokemonList
+  `),
+    {
+      /* query variables */
+    },
+  );
 
   // Get the PokemonList component
   const PokemonListComponent = useResult(fragmentReference);
 
-  const handlePokemonClick = useCallback((pokemon: PokemonT) => {
+  const handlePokemonClick = useCallback((pokemon: any) => {
     setSelectedPokemon(pokemon);
   }, []);
 
@@ -31,7 +34,29 @@ export default function Home() {
       </Head>
       <div>
         {selectedPokemon ? (
-          <Pokemon pokemon={selectedPokemon} onBack={handleBackClick} />
+          <div>
+            <Suspense
+              fallback={
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    flexDirection: 'column',
+                    padding: '20px',
+                  }}
+                >
+                  <h1>{selectedPokemon.name}</h1>
+                  <div>Loading pokemon details...</div>
+                </div>
+              }
+            >
+              <selectedPokemon.Pokemon />
+            </Suspense>
+            <button onClick={handleBackClick} style={{ marginTop: '20px' }}>
+              ← Back to List
+            </button>
+          </div>
         ) : (
           <PokemonListComponent onPokemonClick={handlePokemonClick} />
         )}

@@ -1,11 +1,28 @@
-import type { PokemonT } from '@/types';
+import { iso } from '@iso';
 
-type PokemonProps = {
-  pokemon: PokemonT;
-  onBack: () => void;
-};
-
-export function Pokemon({ pokemon, onBack }: PokemonProps) {
+export const Pokemon = iso(`
+  field Pokemon.Pokemon @component {
+    name
+    image
+    number
+    classification
+    types
+    maxHP
+    maxCP
+    attacks {
+      fast {
+        name
+        type
+        damage
+      }
+      special {
+        name
+        type
+        damage
+      }
+    }
+  }
+`)(function PokemonComponent({ data }) {
   return (
     <div
       style={{
@@ -15,17 +32,17 @@ export function Pokemon({ pokemon, onBack }: PokemonProps) {
         alignItems: 'center',
       }}
     >
-      <h1>{pokemon.name}</h1>
-      <img src={pokemon.image} alt={pokemon.name} width="200" />
-      <p>Number: #{pokemon.number}</p>
-      <p>Classification: {pokemon.classification}</p>
-      <p>Types: {pokemon.types.join(', ')}</p>
-      <p>Max HP: {pokemon.maxHP}</p>
-      <p>Max CP: {pokemon.maxCP}</p>
+      <h1>{data.name}</h1>
+      <img src={data.image} alt={data.name} width="200" />
+      <p>Number: #{data.number}</p>
+      <p>Classification: {data.classification}</p>
+      <p>Types: {data.types.join(', ')}</p>
+      <p>Max HP: {data.maxHP}</p>
+      <p>Max CP: {data.maxCP}</p>
 
       <h3>Fast Attacks:</h3>
       <ul>
-        {pokemon.attacks.fast.map((attack, index) => (
+        {data.attacks.fast.map((attack, index) => (
           <li key={index}>
             {attack.name} ({attack.type}) - {attack.damage} damage
           </li>
@@ -34,13 +51,12 @@ export function Pokemon({ pokemon, onBack }: PokemonProps) {
 
       <h3>Special Attacks:</h3>
       <ul>
-        {pokemon.attacks.special.map((attack, index) => (
+        {data.attacks.special.map((attack, index) => (
           <li key={index}>
             {attack.name} ({attack.type}) - {attack.damage} damage
           </li>
         ))}
       </ul>
-      <button onClick={onBack}>← Back to List</button>
     </div>
   );
-}
+});
